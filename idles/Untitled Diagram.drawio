@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T14:31:26.123Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="cS_IZKkFhsPx3s_gPwsT" version="18.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T14:42:02.993Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="8jjuOoxvs6AXbd4-08yS" version="18.0.3" type="github">
   <diagram id="2lmbKR_MvFjQ50chhQV9" name="Page-1">
     <mxGraphModel dx="1718" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
@@ -260,7 +260,7 @@
           <mxGeometry x="5" y="25" width="570" height="200" as="geometry" />
         </mxCell>
         <mxCell id="nJEN34YKC323t9ce6qK3-72" value="&lt;span style=&quot;font-family: noto_regular; color: rgb(96, 96, 96); font-size: 10pt;&quot;&gt;idle_updated&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="nJEN34YKC323t9ce6qK3-74" vertex="1">
-          <mxGeometry x="14" y="180" width="120" height="60" as="geometry" />
+          <mxGeometry x="14" y="180" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nJEN34YKC323t9ce6qK3-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000066;" parent="1" source="nJEN34YKC323t9ce6qK3-14" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -353,16 +353,31 @@
           <mxGeometry x="80" y="1430" width="1080" height="250" as="geometry" />
         </mxCell>
         <mxCell id="KdFnmtoDV9TNqlVpZlvo-11" value="" style="group;fillColor=none;" vertex="1" connectable="0" parent="KdFnmtoDV9TNqlVpZlvo-9">
-          <mxGeometry x="200.00478260869568" width="685.5652173913044" height="250" as="geometry" />
+          <mxGeometry x="170.00478260869568" y="320" width="685.5652173913044" height="250" as="geometry" />
         </mxCell>
         <mxCell id="KdFnmtoDV9TNqlVpZlvo-12" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#D4E1F5;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-11">
           <mxGeometry width="685.5652173913044" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="KdFnmtoDV9TNqlVpZlvo-13" value="&lt;p style=&quot;&quot; data-pm-slice=&quot;1 1 []&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Проблема № 1.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;&quot; data-pm-slice=&quot;1 1 []&quot;&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;События:&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_booking_created&lt;/b&gt;&lt;/i&gt; (bookIdle) и&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_booking_canceled&lt;/b&gt;&lt;/i&gt; (cancelIdleBooking) &lt;br&gt;относятся к сущности&lt;i&gt;&lt;b&gt; idle-booking&lt;/b&gt;&lt;/i&gt;.&lt;br&gt;&lt;br&gt;А события&amp;nbsp;&lt;/font&gt;&lt;b&gt;&lt;i&gt;request_slot_approved&lt;/i&gt;&lt;/b&gt; (approveSlot) и&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_approve_canceled&lt;/b&gt;&lt;/i&gt; (revertSlotApprove) &lt;br&gt;относятся к сущности &lt;i&gt;&lt;b&gt;request-slot&lt;/b&gt;&lt;/i&gt;. &lt;br&gt;&lt;br&gt;Надо либо все события привязать к&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;&gt;request-slot &lt;/b&gt;(и эндпоинту слота),&lt;br&gt;либо все привязать к&amp;nbsp;&lt;i&gt;&lt;b&gt;idle-booking&amp;nbsp;&lt;/b&gt;&lt;/i&gt;(и эндпоинту букинга).&lt;br&gt;&lt;br&gt;&lt;br&gt;События букинга можно убрать совсем, вместо них слать нужные события по сущностям: &lt;br&gt;&lt;b&gt;idle_updated&lt;/b&gt; и &lt;b&gt;request_slot_updated&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-11">
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-13" value="&lt;p style=&quot;&quot; data-pm-slice=&quot;1 1 []&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Проблема № 1.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;&quot; data-pm-slice=&quot;1 1 []&quot;&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;События:&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_booking_created&lt;/b&gt;&lt;/i&gt; (bookIdle) и&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_booking_canceled&lt;/b&gt;&lt;/i&gt; (cancelIdleBooking) &lt;br&gt;относятся к сущности&lt;i&gt;&lt;b&gt; idle-booking&lt;/b&gt;&lt;/i&gt;.&lt;br&gt;&lt;br&gt;А события&amp;nbsp;&lt;/font&gt;&lt;b&gt;&lt;i&gt;request_slot_approved&lt;/i&gt;&lt;/b&gt; (approveSlot) и&amp;nbsp;&lt;i&gt;&lt;b&gt;request_slot_approve_canceled&lt;/b&gt;&lt;/i&gt; (revertSlotApprove) &lt;br&gt;относятся к сущности &lt;i&gt;&lt;b&gt;request-slot&lt;/b&gt;&lt;/i&gt;. &lt;br&gt;&lt;br&gt;Надо либо все события привязать к&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;&gt;request-slot &lt;/b&gt;(и эндпоинту слота),&lt;br&gt;либо все привязать к&amp;nbsp;&lt;i&gt;&lt;b&gt;idle-booking&amp;nbsp;&lt;/b&gt;&lt;/i&gt;(и эндпоинту букинга). (мне это кажется более логичным)&lt;br&gt;&lt;br&gt;&lt;br&gt;События букинга можно убрать совсем, вместо них слать нужные события по сущностям: &lt;br&gt;&lt;b&gt;idle_updated&lt;/b&gt; и &lt;b&gt;request_slot_updated&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-11">
           <mxGeometry x="9.996956521739131" width="610" height="230" as="geometry" />
         </mxCell>
         <mxCell id="KdFnmtoDV9TNqlVpZlvo-8" value="&lt;span style=&quot;font-family: noto_regular; color: rgb(96, 96, 96); font-size: 10pt;&quot;&gt;Booking&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-9">
-          <mxGeometry x="-0.0008695652173855706" y="80.00000000000001" width="187.82608695652175" height="60" as="geometry" />
+          <mxGeometry x="-30.000869565217386" y="400" width="187.82608695652175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-32" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;color: rgb(66, 66, 66); font-family: Roboto, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;request_slot_created,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(66, 66, 66); font-family: Roboto, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;request_slot_updated&lt;/span&gt;&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-9">
+          <mxGeometry x="14" y="60" width="186" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-33" value="&lt;p&gt;&lt;font face=&quot;noto_regular&quot; color=&quot;#606060&quot;&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Сейчас их 2, а можно объединить в 1. Информации хватает&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=30;position=0.34;position2=0.26;base=20;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-9">
+          <mxGeometry width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-35" value="" style="group" vertex="1" connectable="0" parent="KdFnmtoDV9TNqlVpZlvo-9">
+          <mxGeometry x="220" y="60" width="404" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-36" value="&lt;span style=&quot;color: rgb(66, 66, 66); font-family: Roboto, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;request_slot_deleted&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-35">
+          <mxGeometry x="-220" y="130" width="186" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-37" value="&lt;p&gt;&lt;font face=&quot;noto_regular&quot; color=&quot;#606060&quot;&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Все ок&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=30;position=0.34;position2=0.26;base=20;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-35">
+          <mxGeometry x="-204" y="70" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nJEN34YKC323t9ce6qK3-64" value="Booking" style="swimlane;startSize=23;fillColor=#00CC66;" parent="1" vertex="1">
           <mxGeometry x="827" y="620" width="170" height="120" as="geometry">
@@ -412,6 +427,15 @@
             </Array>
             <mxPoint x="950" y="435" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-28" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="560" y="850" width="404" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-29" value="&lt;span style=&quot;color: rgb(96, 96, 96); font-family: noto_regular; font-size: 13.3333px;&quot;&gt;idle_deleted&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-28">
+          <mxGeometry x="14" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KdFnmtoDV9TNqlVpZlvo-30" value="&lt;p&gt;&lt;font face=&quot;noto_regular&quot; color=&quot;#606060&quot;&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Все ок&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=30;position=0.34;position2=0.26;base=20;" vertex="1" parent="KdFnmtoDV9TNqlVpZlvo-28">
+          <mxGeometry y="70" width="290" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
