@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T09:31:07.580Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="GgmI-4gOUldzV-__MSvj" version="20.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-18T07:57:18.755Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Iwz2D5XtHq19SpPjRjVZ" version="20.1.1" type="github">
   <diagram id="b5qmhu_wqELokIMZqW0I" name="Page-1">
     <mxGraphModel dx="2062" dy="1065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -409,6 +409,9 @@
             </Array>
             <mxPoint x="400" y="1340" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="uXDpai4_U0EWndrV--_L-1" value="&lt;h1&gt;Сейчас для вывода слотов используется этот эндпоинт&lt;/h1&gt;&lt;p&gt;Из-за того, что у слота от эндпоинта заявок букинг не включается в зависимости и мы не можем определить бронирован ли он&lt;/p&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="1710" width="310" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
