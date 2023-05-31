@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-31T06:56:15.135Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="mTx3NX7xsVIcaWzMesj1" version="21.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-31T11:17:11.686Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="9JRlNh9wVz8dQXX7exfD" version="21.3.6" type="github">
   <diagram id="b5qmhu_wqELokIMZqW0I" name="Page-1">
     <mxGraphModel dx="2074" dy="1074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -293,8 +293,11 @@
         <mxCell id="pV0ACqQaasXmKPG5yBSi-11" value="&lt;h1&gt;Unused Endpoints&lt;/h1&gt;&lt;div&gt;&lt;b&gt;/web_api/v1/categories/with_active_requests&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="CxZGc-sbhGBYS19DaEqy-2" vertex="1">
           <mxGeometry y="160" width="290" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="aAW8-bnGlDTj_yUbLB6B-2" value="&lt;h1&gt;Архив&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;При переходе по прямому урлу уходят лишние запросы (нужные для работы с активными адйлами, но не с архивными)&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aAW8-bnGlDTj_yUbLB6B-2" value="&lt;h1&gt;Архив&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;При переходе по прямому урлу уходят лишние запросы (нужные для работы с активными адйлами, но не с архивными)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Информация по слотам заявки, айдлам, букингу запрашивается из request_slots эндпоинта. Почему?&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="20" width="770" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="rRqqI0h1yAEkfBHYcegK-1" value="&lt;h1&gt;Бронирование&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;При отмене бронирования можно не передавать idle_id и request_slot_id, т.к. в урле уже содержится idle_booking.id и мы знаем какой конкретно букинг нам надо удалять. И дополнительно хотелось бы отправлять resultant_comment в теле запроса а не в гет параметрах&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="827" y="20" width="770" height="550" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
